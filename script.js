@@ -1,202 +1,370 @@
 /* ==================================
-PORTFOLIO DATA
-Edit everything from here
-================================== */
+   DATA DEFINITIONS
+   ================================== */
 
-const DATA = {
-
-name:"Vaibhav Joshi",
-
-role:"Sr iOS Engineer | Flutter | 7.5+ Years",
-
-summary:"Senior iOS developer and tech lead delivering enterprise mobile solutions, leading teams, and building scalable iOS applications using modern architectures.",
-
-about:"I am a Senior iOS Developer with 7.5+ years experience building scalable mobile apps using Swift, Objective-C and Flutter. I have led teams, delivered enterprise apps, and worked closely with stakeholders to transform business ideas into high-quality mobile products.",
-
-links:[
-{
-title:"LinkedIn",
-url:"https://www.linkedin.com/in/vaibhav-joshi-83000813b/"
-},
-{
-title:"GitHub",
-url:"https://github.com"
-}
-],
-
-experience:[
-
-{
-company:"Cubastion Consulting",
-role:"Tech Lead",
-period:"Dec 2022 — Present",
-bullets:[
-"Led mobile and CRM teams",
-"Mentored 10+ developers",
-"Managed production releases"
-]
-},
-
-{
-company:"Sysmind Tech",
-role:"iOS Developer",
-period:"May 2022 — Dec 2022",
-bullets:[
-"Implemented MVVM architecture",
-"Improved UI performance"
-]
-}
-
-],
-
-projects:[
-
-{
-name:"Golf Been",
-tech:"Swift, iOS",
-link:"https://apps.apple.com/us/app/golf-been/id1573239854"
-},
-
-{
-name:"VCare Blue Voltas",
-tech:"Swift, Flutter",
-link:"https://apps.apple.com/in/app/vcare-blue-voltas/id1473801658"
-}
-
-],
-
-skills:[
-"Swift",
-"Objective-C",
-"Flutter",
-"MVVM",
-"Firebase",
-"REST APIs",
-"CoreData",
-"Realm",
-"Stripe",
-"Git"
-],
-
-blogs:[
-
-{
-title:"Creating a Simple Loader in Swift",
-link:"https://medium.com/@vbhvjshi/creating-a-simple-loader-in-swift-for-your-ios-app-d49855c18894"
-},
-
-{
-title:"Mastering Async Await in Swift",
-link:"https://medium.com/@vbhvjshi/mastering-async-await-in-swift-a-game-changer-for-ios-development-031bbebd41f4"
-}
-
-]
-
-}
-
-
+const PORTFOLIO_DATA = {
+  hero: {
+    name: "Vaibhav Joshi",
+    role: "Sr. iOS Engineer | Flutter — 7.5+ years",
+    summary: "Senior iOS / Tech Lead with 7.5+ years of experience delivering enterprise-grade mobile solutions, leading cross-functional teams, owning end-to-end SDLC, mentoring engineers, and partnering with stakeholders to build scalable, secure, high-performance iOS applications using modern architectures.",
+    github: "https://github.com/vabhv-jsh",
+    linkedin: "https://www.linkedin.com/in/vaibhav-joshi-83000813b/",
+    email: "vbhvjshi@gmail.com"
+  },
+  about: {
+    paragraphs: [
+      "Senior iOS / Tech Lead with 7.5+ years of experience delivering enterprise-grade mobile solutions. I specialize in leading cross-functional teams, owning end-to-end SDLC, and mentoring engineers to build high-performance applications.",
+      "I am passionate about modern mobile architectures and have a proven track record of partnering with stakeholders to translate business goals into scalable technical reality.",
+      "Based in Haldwani (Uttarakhand), India. I focus on technical leadership, clean architecture, and building robust mobile ecosystems."
+    ],
+    stats: [
+      { value: "7.5+", label: "Years Experience", icon: "code" },
+      { value: "50K+", label: "App Downloads", icon: "download" },
+      { value: "20+", label: "Apps Shipped", icon: "rocket" },
+      { value: "Led", label: "Teams & Mentorship", icon: "users" }
+    ]
+  },
+  experience: [
+    {
+      company: "Cubastion Consulting",
+      title: "Tech Lead",
+      date: "Dec 2022 — Present",
+      description: "Leading mobile and CRM teams, owning sprint planning, technical reviews, and production releases.",
+      bullets: [
+        "Led mobile and CRM teams, owning sprint planning, technical reviews, and production releases.",
+        "Mentored 10+ developers through training sessions and code reviews, improving code quality and delivery speed.",
+        "Acted as primary client interface, translating business requirements into scalable technical solutions."
+      ]
+    },
+    {
+      company: "Sysmind Tech",
+      title: "iOS Developer",
+      date: "May 2022 — Dec 2022",
+      description: "Developed and refactored core features using MVVM for global enterprise clients.",
+      bullets: [
+        "Implemented and refactored features using MVVM to improve reusability and maintainability.",
+        "Stabilized APIs and reduced production issues through proactive debugging and optimization.",
+        "Improved UI performance and app stability through architectural refinements."
+      ]
+    },
+    {
+      company: "Evon Technologies",
+      title: "iOS Developer",
+      date: "Jul 2021 — May 2022",
+      description: "Enhanced production iOS applications and integrated complex third-party SDKs.",
+      bullets: [
+        "Enhanced production iOS applications and integrated third-party SDKs.",
+        "Optimized animations and UI rendering to improve runtime performance.",
+        "Enforced Swift and Objective-C best practices across the codebase."
+      ]
+    },
+    {
+      company: "Yugasa Software Labs",
+      title: "iOS Developer",
+      date: "Aug 2019 — July 2021",
+      description: "Delivered multiple client-facing iOS applications with full App Store ownership.",
+      bullets: [
+        "Delivered and maintained multiple client-facing iOS applications with App Store ownership.",
+        "Improved UI/UX using adaptive layouts across device sizes.",
+        "Integrated REST APIs with retry, error handling, and data persistence."
+      ]
+    },
+    {
+      company: "Cacao Solutions",
+      title: "Junior iOS Developer",
+      date: "Jul 2018 — Aug 2019",
+      description: "Built data-driven iOS applications using Core Data and custom networking layers.",
+      bullets: [
+        "Built data-driven iOS applications using Core Data and a custom networking layer.",
+        "Designed onboarding flows and core navigation experiences.",
+        "Refactored legacy code to reduce technical debt and improve stability."
+      ]
+    }
+  ],
+  education: [
+    { title: "MCA — Graphic Era Hill University", date: "2015–2018" },
+    { title: "B.Sc — M.B.P.G. College", date: "2012–2015" },
+    { title: "Intermediate", date: "2010–2011" },
+    { title: "Highschool", date: "2008–2009" }
+  ],
+  projects: [
+    {
+      title: "AIBOBOA",
+      description: "Collaborated with stakeholders; improved app stability; managed App Store deployment.",
+      tags: ["iOS", "Swift"],
+      url: "https://apps.apple.com/lb/app/aiboboa/id1511900581",
+      image: "aiboboa_image.jpg"
+    },
+    {
+      title: "Golf Been",
+      description: "Drove development; coordinated with client; guided team execution.",
+      tags: ["iOS", "Swift"],
+      url: "https://apps.apple.com/us/app/golf-been/id1573239854",
+      image: "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      title: "DSD TABS",
+      description: "Spearheaded dev; optimised performance; managed team.",
+      tags: ["Flutter"],
+      url: "https://testflight.apple.com/join/Y1KMYGTk",
+      image: "/Users/vr/.gemini/antigravity/brain/da62fdeb-6093-41e3-b507-7cdbc496bf21/mercedes_benz_clean_project_1773138325746.png"
+    },
+    {
+      title: "VCare Blue Voltas",
+      description: "Led cross-platform delivery; improved performance; ensured on-time releases.",
+      tags: ["Swift", "Objective-C", "Flutter"],
+      url: "https://apps.apple.com/in/app/vcare-blue-voltas/id1473801658",
+      url2: "https://play.google.com/store/apps/details?id=com.cubastion.voltasvcare&hl=en_IN&pli=1",
+      image: "/Users/vr/.gemini/antigravity/brain/da62fdeb-6093-41e3-b507-7cdbc496bf21/voltas_product_showcase_1773138440391.png"
+    }
+  ],
+  skills: [
+    {
+      category: "Mobile Platforms",
+      items: [
+        { name: "Swift", percent: 95 },
+        { name: "Dart", percent: 90 },
+        { name: "Objective-C", percent: 80 }
+      ]
+    },
+    {
+      category: "Architecture & Design",
+      items: [
+        { name: "MVVM / MVC / MVP", percent: 92 },
+        { name: "SOLID Principles", percent: 88 },
+        { name: "Micro Frontends", percent: 78 }
+      ]
+    },
+    {
+      category: "Advanced Tech",
+      items: [
+        { name: "Core Data / Realm", percent: 80 },
+        { name: "AI / ChatGPT / Cursor", percent: 95 },
+        { name: "Payment Gateways", percent: 86 }
+      ]
+    }
+  ],
+  tools: [
+    "Swift", "Objective-C", "Flutter", "iOS", "XCode", "Figma",
+    "Core Data", "Realm", "SQFLite", "Getx", "Bloc", "State Management",
+    "GitHub/Git/GitLab", "Bitbucket", "Jira", "Location Services",
+    "Push Notifications", "REST API", "Google Maps SDK", "App Store Connect",
+    "Alamofire", "Agile Methodologies", "Firebase"
+  ],
+  links: [
+    { title: "Create a simple loader for iOS Apps", href: "https://medium.com/@vbhvjshi/creating-a-simple-loader-in-swift-for-your-ios-app-d49855c18894" },
+    { title: "Mastering Async/Await in Swift", href: "https://medium.com/@vbhvjshi/mastering-async-await-in-swift-a-game-changer-for-ios-development-031bbebd41f4" }
+  ]
+};
 
 /* ==================================
-RENDERING
-================================== */
+   RENDERING FUNCTIONS
+   ================================== */
 
+function init() {
+  renderHero();
+  renderAbout();
+  renderExperience();
+  renderEducation();
+  renderProjects();
+  renderSkills();
+  renderLinks();
+  renderContact();
+  initAnimations();
+}
 
-document.getElementById("navName").innerText=DATA.name
-document.getElementById("heroName").innerText=DATA.name
-document.getElementById("heroRole").innerText=DATA.role
-document.getElementById("heroSummary").innerText=DATA.summary
-document.getElementById("aboutText").innerText=DATA.about
+function renderHero() {
+  document.getElementById('heroGithub').href = PORTFOLIO_DATA.hero.github;
+  document.getElementById('heroLinkedin').href = PORTFOLIO_DATA.hero.linkedin;
+  document.getElementById('heroEmail').href = `mailto:${PORTFOLIO_DATA.hero.email}`;
+}
 
+const ICONS = {
+  code: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>',
+  download: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>',
+  rocket: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-5c1.62-2.2 5-3 5-3l1 1"></path><path d="M12 15v5s3.03-.55 5-2c2.2-1.62 3-5 3-5l-1-1"></path></svg>',
+  users: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>'
+};
 
+function renderAbout() {
+  const container = document.getElementById('aboutText');
+  container.innerHTML = PORTFOLIO_DATA.about.paragraphs.map(p => `<p>${p}</p>`).join('');
 
-/* EXPERIENCE */
+  const statsContainer = document.getElementById('aboutStats');
+  statsContainer.innerHTML = PORTFOLIO_DATA.about.stats.map(s => `
+    <div class="glass-card stat-card">
+      <div class="stat-icon">${ICONS[s.icon]}</div>
+      <div class="stat-value">${s.value}</div>
+      <div class="stat-label">${s.label}</div>
+    </div>
+  `).join('');
+}
 
-DATA.experience.forEach(job=>{
+function renderExperience() {
+  const container = document.getElementById('experienceList');
+  container.innerHTML = PORTFOLIO_DATA.experience.map((exp, index) => `
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="glass-card timeline-content scale-in">
+        <span class="job-date">${exp.date}</span>
+        <h3 class="job-title">${exp.title}</h3>
+        <span class="job-company">${exp.company}</span>
+        <p class="job-desc">${exp.description}</p>
+        <ul class="job-bullets">
+          ${exp.bullets.map(b => `<li>${b}</li>`).join('')}
+        </ul>
+      </div>
+    </div>
+  `).join('');
+}
 
-document.getElementById("experienceList").innerHTML+=`
+function renderEducation() {
+  const container = document.getElementById('educationList');
+  if (!container) return;
+  container.innerHTML = PORTFOLIO_DATA.education.map(edu => `
+    <div class="glass-card education-card" style="margin-bottom: 24px; padding: 24px;">
+      <h3 class="job-title">${edu.title}</h3>
+      <span class="job-date">${edu.date}</span>
+    </div>
+  `).join('');
+}
 
-<div class="job">
+function renderProjects() {
+  const container = document.getElementById('projectsList');
+  container.innerHTML = PORTFOLIO_DATA.projects.map(p => `
+    <div class="glass-card project-card">
+      <div class="project-img-wrapper">
+        <img src="${p.image}" alt="${p.title}" class="project-img">
+      </div>
+      <div class="project-info">
+        <div class="project-header">
+          <h3 class="project-title">${p.title}</h3>
+          <div class="project-role-tag">${p.role ? `<span class="tag role-tag">${p.role}</span>` : '<span class="tag role-tag placeholder"></span>'}</div>
+        </div>
+        <p class="project-desc">${p.description}</p>
+        <div class="project-footer">
+          <div class="project-tags">
+            ${p.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+          </div>
+          <div class="project-links">
+            ${p.url ? `
+              <a href="${p.url}" target="_blank" class="project-link" title="Open in App Store">
+                <svg role="img" viewBox="-4 -4 32 32" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.702z"/></svg>
+                <span>Open in App Store</span>
+              </a>
+            ` : ''}
+            ${p.url2 ? `
+              <a href="${p.url2}" target="_blank" class="project-link play-store-link" title="Open in Play Store">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M3 2l13 10L3 22V2zm15.5 9.5L6 3.5l6.5 5L18.5 11.5zM6 20.5l12.5-8L12.5 15.5 6 20.5z"/>
+                </svg>
+                <span>Open in Play Store</span>
+              </a>
+            ` : ''}
+          </div>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
 
-<h3>${job.company}</h3>
+function renderSkills() {
+  const matrixContainer = document.getElementById('skillsMatrix');
+  matrixContainer.innerHTML = PORTFOLIO_DATA.skills.map(cat => `
+    <div class="glass-card skill-category">
+      <h3 class="category-title">${cat.category}</h3>
+      ${cat.items.map(skill => `
+        <div class="skill-row">
+          <div class="skill-label-row">
+            <span class="skill-name">${skill.name}</span>
+            <span class="skill-percent">${skill.percent}%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" data-percent="${skill.percent}"></div>
+          </div>
+        </div>
+      `).join('')}
+    </div>
+  `).join('');
 
-<p>${job.role} | ${job.period}</p>
+  const toolsContainer = document.getElementById('toolsList');
+  toolsContainer.innerHTML = PORTFOLIO_DATA.tools.map(tool => `
+    <span class="tool-chip">${tool}</span>
+  `).join('');
+}
 
-<ul>
+function renderLinks() {
+  const container = document.getElementById('linksList');
+  if (!container) return;
+  container.className = 'links-container';
+  container.innerHTML = PORTFOLIO_DATA.links.map(link => `
+    <a href="${link.href}" target="_blank" class="link-card">
+      <span class="link-title">${link.title}</span>
+      <span class="link-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+      </span>
+    </a>
+  `).join('');
+}
 
-${job.bullets.map(b=>`<li>${b}</li>`).join("")}
+function renderContact() {
+  const container = document.getElementById('contactInfo');
+  if (!container) return;
+  container.innerHTML = `
+    <div class="contact-links-inner" style="display: flex; flex-direction: column; gap: 16px; align-items: center; margin-bottom: 32px;">
+      <a href="${PORTFOLIO_DATA.hero.linkedin}" target="_blank" class="social-link" style="display: flex; align-items: center; gap: 12px; font-size: 16px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        LinkedIn Profile
+      </a>
+      <a href="mailto:${PORTFOLIO_DATA.hero.email}" class="social-link" style="display: flex; align-items: center; gap: 12px; font-size: 16px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+        ${PORTFOLIO_DATA.hero.email}
+      </a>
+    </div>
+  `;
+}
 
-</ul>
+function initAnimations() {
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
 
-</div>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
 
-`
+        // Special case for progress bars
+        const fills = entry.target.querySelectorAll('.progress-bar-fill');
+        fills.forEach(fill => {
+          fill.style.width = fill.getAttribute('data-percent') + '%';
+        });
+      }
+    });
+  }, observerOptions);
 
-})
+  document.querySelectorAll('.fade-up, .section').forEach(el => {
+    observer.observe(el);
+  });
 
+  // Update active nav link on scroll
+  window.addEventListener('scroll', () => {
+    let current = '';
+    document.querySelectorAll('section').forEach(section => {
+      const sectionTop = section.offsetTop;
+      if (pageYOffset >= sectionTop - 100) {
+        current = section.getAttribute('id');
+      }
+    });
 
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href').substring(1) === current) {
+        link.classList.add('active');
+      }
+    });
+  });
+}
 
-/* PROJECTS */
-
-DATA.projects.forEach(p=>{
-
-document.getElementById("projectsList").innerHTML+=`
-
-<div class="project-card">
-
-<h3>${p.name}</h3>
-
-<p>${p.tech}</p>
-
-<a href="${p.link}" target="_blank">View App</a>
-
-</div>
-
-`
-
-})
-
-
-
-/* SKILLS */
-
-DATA.skills.forEach(s=>{
-
-document.getElementById("skillsList").innerHTML+=`
-
-<div class="skill">${s}</div>
-
-`
-
-})
-
-
-
-/* BLOGS */
-
-DATA.blogs.forEach(b=>{
-
-document.getElementById("blogList").innerHTML+=`
-
-<li>
-
-<a href="${b.link}" target="_blank">${b.title}</a>
-
-</li>
-
-`
-
-})
-
-
-
-/* CONTACT */
-
-DATA.links.forEach(l=>{
-
-document.getElementById("contactList").innerHTML+=`
-
-<a href="${l.url}" target="_blank">${l.title}</a><br>
-
-`
-
-})
+document.addEventListener('DOMContentLoaded', init);
