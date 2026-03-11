@@ -1,13 +1,15 @@
-/* ==================================
-   DATA DEFINITIONS
-   ================================== */
+/* 
+   PORTFOLIO DATA
+   This is the "database" of your website. 
+   Changing the text or links here will update your website automatically.
+*/
 
 const PORTFOLIO_DATA = {
   hero: {
     name: "Vaibhav Joshi",
     role: "Sr. iOS Engineer | Flutter — 7.5+ years",
     summary: "Senior iOS / Tech Lead with 7.5+ years of experience delivering enterprise-grade mobile solutions, leading cross-functional teams, owning end-to-end SDLC, mentoring engineers, and partnering with stakeholders to build scalable, secure, high-performance iOS applications using modern architectures.",
-    github: "https://github.com/vabhv-jsh",
+    github: "https://github.com/vbhvjshi",
     linkedin: "https://www.linkedin.com/in/vaibhav-joshi-83000813b/",
     email: "vbhvjshi@gmail.com"
   },
@@ -87,6 +89,11 @@ const PORTFOLIO_DATA = {
     { title: "Intermediate", date: "2010–2011" },
     { title: "Highschool", date: "2008–2009" }
   ],
+  /* 
+     PROJECTS 
+     Add or remove projects here. 
+     The "image" should match the filename in your folder.
+  */
   projects: [
     {
       title: "AIBOBOA",
@@ -107,7 +114,7 @@ const PORTFOLIO_DATA = {
       description: "Spearheaded dev; optimised performance; managed team.",
       tags: ["Flutter"],
       url: "https://testflight.apple.com/join/Y1KMYGTk",
-      image: "/Users/vr/.gemini/antigravity/brain/da62fdeb-6093-41e3-b507-7cdbc496bf21/mercedes_benz_clean_project_1773138325746.png"
+      image: "mercedes_benz.png"
     },
     {
       title: "VCare Blue Voltas",
@@ -115,7 +122,7 @@ const PORTFOLIO_DATA = {
       tags: ["Swift", "Objective-C", "Flutter"],
       url: "https://apps.apple.com/in/app/vcare-blue-voltas/id1473801658",
       url2: "https://play.google.com/store/apps/details?id=com.cubastion.voltasvcare&hl=en_IN&pli=1",
-      image: "/Users/vr/.gemini/antigravity/brain/da62fdeb-6093-41e3-b507-7cdbc496bf21/voltas_product_showcase_1773138440391.png"
+      image: "voltas_product.png"
     }
   ],
   skills: [
@@ -157,9 +164,10 @@ const PORTFOLIO_DATA = {
   ]
 };
 
-/* ==================================
+/* 
    RENDERING FUNCTIONS
-   ================================== */
+   These functions take the DATA above and put it into your HTML.
+*/
 
 function init() {
   renderHero();
@@ -229,6 +237,11 @@ function renderEducation() {
   `).join('');
 }
 
+/* 
+   RENDER PROJECTS
+   This specific function builds the HTML boxes for your projects 
+   and puts them into the "projectsList" div in index.html.
+*/
 function renderProjects() {
   const container = document.getElementById('projectsList');
   container.innerHTML = PORTFOLIO_DATA.projects.map(p => `
@@ -311,7 +324,7 @@ function renderContact() {
   const container = document.getElementById('contactInfo');
   if (!container) return;
   container.innerHTML = `
-    <div class="contact-links-inner" style="display: flex; flex-direction: column; gap: 16px; align-items: center; margin-bottom: 32px;">
+    <div class="contact-links-inner" style="display: flex; flex-direction: column; gap: 16px; align-items: center; margin-bottom: 16px;">
       <a href="${PORTFOLIO_DATA.hero.linkedin}" target="_blank" class="social-link" style="display: flex; align-items: center; gap: 12px; font-size: 16px;">
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
         LinkedIn Profile
