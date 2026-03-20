@@ -152,7 +152,7 @@ const PORTFOLIO_DATA = {
     }
   ],
   tools: [
-    "Swift", "Objective-C", "Flutter", "iOS", "XCode", "Figma",
+    "Swift", "Objective-C", "Flutter", "iOS", "XCode", "Figma", "Antigravity",
     "Core Data", "Realm", "SQFLite", "Getx", "Bloc", "State Management",
     "GitHub/Git/GitLab", "Bitbucket", "Jira", "Location Services",
     "Push Notifications", "REST API", "Google Maps SDK", "App Store Connect",
