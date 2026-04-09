@@ -7,8 +7,8 @@
 const PORTFOLIO_DATA = {
   hero: {
     name: "Vaibhav Joshi",
-    role: "Sr. iOS Engineer | Flutter — 7.5+ years",
-    summary: "Senior iOS / Tech Lead with 7.5+ years of experience delivering enterprise-grade mobile solutions, leading cross-functional teams, owning end-to-end SDLC, mentoring engineers, and partnering with stakeholders to build scalable, secure, high-performance iOS applications using modern architectures.",
+    role: "Sr. iOS Engineer | Flutter | Kotlin — 7.5+ years",
+    summary: "Senior iOS / Tech Lead with 7.5+ years of experience delivering enterprise-grade mobile solutions, leading cross-functional teams, owning end-to-end SDLC, mentoring engineers, and partnering with stakeholders to build scalable, secure, high-performance iOS, Android applications using modern architectures.",
     github: "https://github.com/vbhvjshi",
     linkedin: "https://www.linkedin.com/in/vaibhav-joshi-83000813b/",
     email: "vbhvjshi@gmail.com"
@@ -30,12 +30,13 @@ const PORTFOLIO_DATA = {
     {
       company: "Cubastion Consulting",
       title: "Tech Lead",
-      date: "Dec 2022 — Present",
-      description: "Leading mobile and CRM teams, owning sprint planning, technical reviews, and production releases.",
+      date: "Dec 2022 — March 2026",
+      description: "Led mobile iOS, Android and CRM teams, owning sprint planning, technical reviews, and production releases.",
       bullets: [
-        "Led mobile and CRM teams, owning sprint planning, technical reviews, and production releases.",
-        "Mentored 10+ developers through training sessions and code reviews, improving code quality and delivery speed.",
-        "Acted as primary client interface, translating business requirements into scalable technical solutions."
+        "Led mobile iOS - Swift, Android - Kotlin and CRM teams, owning sprint planning, technical reviews, application development and production releases.",
+        "Mentored 4+ developers across iOS and Android (Kotlin) through training sessions and code reviews, improving code quality and delivery speed.",
+        "Acted as primary client interface, translating business requirements into scalable mobile (iOS & Android) and CRM solutions.",
+        "Performed unit testing and designed test cases using AI-assisted tools (ChatGPT, Gemini, Antigravity, Cursor) to improve test coverage and development efficiency."
       ]
     },
     {
@@ -44,7 +45,7 @@ const PORTFOLIO_DATA = {
       date: "May 2022 — Dec 2022",
       description: "Developed and refactored core features using MVVM for global enterprise clients.",
       bullets: [
-        "Implemented and refactored features using MVVM to improve reusability and maintainability.",
+        "Implemented and refactored features using Swift & MVVM architecture to improve reusability and maintainability.",
         "Stabilized APIs and reduced production issues through proactive debugging and optimization.",
         "Improved UI performance and app stability through architectural refinements."
       ]
@@ -55,7 +56,7 @@ const PORTFOLIO_DATA = {
       date: "Jul 2021 — May 2022",
       description: "Enhanced production iOS applications and integrated complex third-party SDKs.",
       bullets: [
-        "Enhanced production iOS applications and integrated third-party SDKs.",
+        "Enhanced production iOS applications using Swift and integrated third-party SDKs.",
         "Optimized animations and UI rendering to improve runtime performance.",
         "Enforced Swift and Objective-C best practices across the codebase."
       ]
@@ -66,9 +67,9 @@ const PORTFOLIO_DATA = {
       date: "Aug 2019 — July 2021",
       description: "Delivered multiple client-facing iOS applications with full App Store ownership.",
       bullets: [
-        "Delivered and maintained multiple client-facing iOS applications with App Store ownership.",
+        "Delivered and maintained multiple client-facing iOS and Android application with App Store & Play Store ownership.",
         "Improved UI/UX using adaptive layouts across device sizes.",
-        "Integrated REST APIs with retry, error handling, and data persistence."
+        "Integrated REST APIs with retry, error handling, and data persistence using Swift technology."
       ]
     },
     {
@@ -77,7 +78,7 @@ const PORTFOLIO_DATA = {
       date: "Jul 2018 — Aug 2019",
       description: "Built data-driven iOS applications using Core Data and custom networking layers.",
       bullets: [
-        "Built data-driven iOS applications using Core Data and a custom networking layer.",
+        "Built data-driven iOS applications using Swift, Core Data and a custom networking layer.",
         "Designed onboarding flows and core navigation experiences.",
         "Refactored legacy code to reduce technical debt and improve stability."
       ]
@@ -100,68 +101,120 @@ const PORTFOLIO_DATA = {
       description: "Collaborated with stakeholders; improved app stability; managed App Store deployment.",
       tags: ["iOS", "Swift"],
       url: "https://apps.apple.com/lb/app/aiboboa/id1511900581",
-      image: "aiboboa_image.jpg"
+      image: "aiboboa_image.jpg",
+      role: "Developer"
     },
     {
       title: "Golf Been",
       description: "Drove development; coordinated with client; guided team execution.",
       tags: ["iOS", "Swift"],
       url: "https://apps.apple.com/us/app/golf-been/id1573239854",
-      image: "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=800&q=80"
+      image: "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=800&q=80",
+      role: "Developer, Team Lead"
     },
     {
       title: "DSD TABS",
       description: "Spearheaded dev; optimised performance; managed team.",
       tags: ["Flutter"],
       url: "https://testflight.apple.com/join/Y1KMYGTk",
-      image: "mercedes_benz.png"
+      image: "mercedes_benz.png",
+      role: "Lead Developer"
     },
     {
       title: "VCare Blue Voltas",
       description: "Led cross-platform delivery; improved performance; ensured on-time releases.",
-      tags: ["Swift", "Objective-C", "Flutter"],
+      tags: ["Swift", "Objective-C", "Flutter", "Kotlin"],
       url: "https://apps.apple.com/in/app/vcare-blue-voltas/id1473801658",
       url2: "https://play.google.com/store/apps/details?id=com.cubastion.voltasvcare&hl=en_IN&pli=1",
-      image: "voltas_product.png"
+      image: "voltas_product.png",
+      role: "Lead Developer"
     }
   ],
   skills: [
     {
       category: "Mobile Platforms",
       items: [
-        { name: "Swift", percent: 95 },
-        { name: "Dart", percent: 90 },
-        { name: "Objective-C", percent: 80 }
+        { name: "Swift / SwiftUI", percent: 95 },
+        { name: "Objective-C", percent: 85 },
+        { name: "Flutter / Dart", percent: 92 },
+        { name: "Kotlin / Android", percent: 88 }
       ]
     },
     {
-      category: "Architecture & Design",
+      category: "Architecture & Core",
       items: [
-        { name: "MVVM / MVC / MVP", percent: 92 },
-        { name: "SOLID Principles", percent: 88 },
-        { name: "Micro Frontends", percent: 78 }
+        { name: "MVVM / MVC / MVP / SOLID", percent: 94 },
+        { name: "Unit Testing / Clean Code", percent: 90 },
+        { name: "Persistence (CoreData/Realm)", percent: 85 }
       ]
     },
     {
-      category: "Advanced Tech",
+      category: "Ecosystem & AI",
       items: [
-        { name: "Core Data / Realm", percent: 80 },
-        { name: "AI / ChatGPT / Cursor", percent: 95 },
-        { name: "Payment Gateways", percent: 86 }
+        { name: "AI Tools (ChatGPT/Gemini)", percent: 96 },
+        { name: "CI/CD & App Store Connect", percent: 88 },
+        { name: "Third Party SDKs / Firebase", percent: 92 }
       ]
     }
   ],
   tools: [
-    "Swift", "Objective-C", "Flutter", "iOS", "XCode", "Figma", "Antigravity",
-    "Core Data", "Realm", "SQFLite", "Getx", "Bloc", "State Management",
-    "GitHub/Git/GitLab", "Bitbucket", "Jira", "Location Services",
-    "Push Notifications", "REST API", "Google Maps SDK", "App Store Connect",
-    "Alamofire", "Agile Methodologies", "Firebase"
+    'Swift', 'Objective-C', 'Flutter', 'iOS', 'XCode', 'SwiftUI', 'Android Studio', 'Figma', 'Cursor', 'Android', 'MVC', 'MVVM', 'MVP', 'SOLID Principle', 'AI', 'ChatGPT', 'Cursor',
+    'Core Data', 'Realm', 'SQFLite', 'Getx', 'Bloc', 'State Management', 'Micro frontend', 'GitHub/Git/GitLab', 'Bitbucket', 'Jira',
+    'Payment Gateway', 'Location Services', 'Push Notifications', 'REST API', 'Kotlin Multiplatform (KMP/KMM)', 'Jetpack Compose',
+    'Third Party Libraries', 'Google Maps SDK', 'App Store Connect', 'Alamofire', 'Agile Methodologies', 'Firebase'
   ],
   links: [
     { title: "Create a simple loader for iOS Apps", href: "https://medium.com/@vbhvjshi/creating-a-simple-loader-in-swift-for-your-ios-app-d49855c18894" },
-    { title: "Mastering Async/Await in Swift", href: "https://medium.com/@vbhvjshi/mastering-async-await-in-swift-a-game-changer-for-ios-development-031bbebd41f4" }
+    { title: "Mastering Async/Await in Swift: A Game-Changer for iOS Development", href: "https://medium.com/@vbhvjshi/mastering-async-await-in-swift-a-game-changer-for-ios-development-031bbebd41f4" }
+  ],
+  strengths: [
+    "Technical Leadership",
+    "Team Mentorship",
+    "Architecture & Performance",
+    "Client & Stakeholder Management"
   ]
+};
+
+const SKILL_ICONS = {
+  'Swift': 'swift',
+  'SwiftUI': 'swift',
+  'Objective-C': 'apple',
+  'Flutter': 'flutter',
+  'Dart': 'dart',
+  'iOS': 'apple',
+  'XCode': 'xcode',
+  'Android': 'android',
+  'Android Studio': 'androidstudio',
+  'Kotlin': 'kotlin',
+  'Kotlin Multiplatform (KMP/KMM)': 'kotlin',
+  'Jetpack Compose': 'jetpackcompose',
+  'Figma': 'figma',
+  'GitHub/Git/GitLab': 'github',
+  'GitHub': 'github',
+  'Git': 'git',
+  'GitLab': 'gitlab',
+  'Bitbucket': 'bitbucket',
+  'Jira': 'jira',
+  'Firebase': 'firebase',
+  'Google Maps SDK': 'googlemaps',
+  'Realm': 'realm',
+  'SQFLite': 'sqlite',
+  'Supabase': 'supabase',
+  'Stripe': 'stripe',
+  'React Native': 'react',
+  'Bloc': 'dart',
+  'Getx': 'flutter',
+  'REST API': 'code', 
+  'AI': 'openai',
+  'ChatGPT': 'openai',
+  'Cursor': 'cursor',
+  'SOLID': 'codesandbox',
+  'MVVM': 'codesandbox',
+  'MVC': 'codesandbox',
+  'MVP': 'codesandbox',
+  'State Management': 'redux',
+  'App Store': 'appstore',
+  'Play Store': 'googleplay'
 };
 
 /* 
@@ -172,6 +225,7 @@ const PORTFOLIO_DATA = {
 function init() {
   renderHero();
   renderAbout();
+  renderStrengths(); // Added
   renderExperience();
   renderEducation();
   renderProjects();
@@ -204,6 +258,19 @@ function renderAbout() {
       <div class="stat-icon">${ICONS[s.icon]}</div>
       <div class="stat-value">${s.value}</div>
       <div class="stat-label">${s.label}</div>
+    </div>
+  `).join('');
+}
+
+function renderStrengths() {
+  const container = document.getElementById('aboutStrengths');
+  if (!container) return;
+  container.innerHTML = PORTFOLIO_DATA.strengths.map(s => `
+    <div class="glass-card strength-card fade-up">
+      <div class="strength-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 11.08 20 11.08 20 13.08 22 13.08 22 11.08"></polyline><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+      </div>
+      <h3 class="strength-text">${s}</h3>
     </div>
   `).join('');
 }
@@ -301,9 +368,17 @@ function renderSkills() {
   `).join('');
 
   const toolsContainer = document.getElementById('toolsList');
-  toolsContainer.innerHTML = PORTFOLIO_DATA.tools.map(tool => `
-    <span class="tool-chip">${tool}</span>
-  `).join('');
+  toolsContainer.innerHTML = PORTFOLIO_DATA.tools.map(tool => {
+    const iconSlug = SKILL_ICONS[tool] || SKILL_ICONS[Object.keys(SKILL_ICONS).find(key => tool.includes(key))];
+    const iconUrl = iconSlug ? `https://cdn.simpleicons.org/${iconSlug}` : null;
+    
+    return `
+      <span class="tool-chip">
+        ${iconUrl ? `<img src="${iconUrl}" alt="${tool}" class="tool-icon">` : ''}
+        ${tool}
+      </span>
+    `;
+  }).join('');
 }
 
 function renderLinks() {
