@@ -176,63 +176,104 @@ const PORTFOLIO_DATA = {
 };
 
 const SKILL_ICONS = {
-  'Swift': 'swift',
-  'SwiftUI': 'swift',
-  'Objective-C': 'apple',
-  'Flutter': 'flutter',
-  'Dart': 'dart',
-  'iOS': 'apple',
-  'XCode': 'xcode',
-  'Android': 'android',
-  'Android Studio': 'androidstudio',
-  'Kotlin': 'kotlin',
-  'Kotlin Multiplatform (KMP/KMM)': 'kotlin',
-  'Jetpack Compose': 'jetpackcompose',
-  'Figma': 'figma',
-  'GitHub/Git/GitLab': 'github',
-  'GitHub': 'github',
-  'Git': 'git',
-  'GitLab': 'gitlab',
-  'Bitbucket': 'bitbucket',
-  'Jira': 'jira',
-  'Firebase': 'firebase',
-  'Google Maps SDK': 'googlemaps',
-  'Realm': 'realm',
-  'SQFLite': 'sqlite',
-  'Supabase': 'supabase',
-  'Stripe': 'stripe',
-  'React Native': 'react',
-  'Bloc': 'dart',
-  'Getx': 'flutter',
-  'REST API': 'code', 
-  'AI': 'openai',
-  'ChatGPT': 'openai',
-  'Cursor': 'cursor',
-  'SOLID': 'codesandbox',
-  'MVVM': 'codesandbox',
-  'MVC': 'codesandbox',
-  'MVP': 'codesandbox',
-  'State Management': 'redux',
-  'App Store': 'appstore',
-  'Play Store': 'googleplay'
+  'Swift': 'swift.png',
+  'SwiftUI': 'swift.png',
+  'Objective-C': 'apple.png',
+  'Flutter': 'flutter.png',
+  'Dart': 'flutter.png',
+  'iOS': 'apple.png',
+  'XCode': 'xcode.svg',
+  'Android': 'android.png',
+  'Android Studio': 'androidstudio.svg',
+  'Kotlin': 'kotlin.png',
+  'Kotlin Multiplatform (KMP/KMM)': 'kotlin.png',
+  'Jetpack Compose': 'kotlin.png', // Use Kotlin logo for Compose as it's the primary language
+  'Figma': 'figma.svg',
+  'GitHub/Git/GitLab': 'git.svg',
+  'GitHub': 'github.svg',
+  'Git': 'git.svg',
+  'GitLab': 'gitlab.svg',
+  'Bitbucket': 'bitbucket.svg',
+  'Jira': 'jira.svg',
+  'Firebase': 'firebase.png',
+  'Google Maps SDK': 'googleplay.svg', // Closest placeholder
+  'Realm': 'realm.svg',
+  'SQFLite': 'sqlite.svg',
+  'Supabase': 'supabase.svg',
+  'Stripe': 'stripe.svg',
+  'React Native': 'react.svg',
+  'Bloc': 'flutter.png',
+  'Getx': 'flutter.png',
+  'REST API': 'api.svg',
+  'AI': 'openai.svg',
+  'ChatGPT': 'openai.svg',
+  'Cursor': 'cursor.svg',
+  'SOLID': 'code.svg',
+  'MVVM': 'code.svg',
+  'MVC': 'code.svg',
+  'MVP': 'code.svg',
+  'State Management': 'code.svg',
+  'App Store': 'appstore.svg',
+  'Play Store': 'googleplay.svg',
+  'Alamofire': 'apple.png'
 };
 
 /* 
    RENDERING FUNCTIONS
    These functions take the DATA above and put it into your HTML.
 */
-
 function init() {
   renderHero();
   renderAbout();
-  renderStrengths(); // Added
   renderExperience();
   renderEducation();
   renderProjects();
   renderSkills();
   renderLinks();
+  renderStrengths();
   renderContact();
   initAnimations();
+}
+
+/**
+ * Renders the Tools and Platforms chips with icons.
+ * Uses SimpleIcons for brands and Icons8 for generic technical terms.
+ */
+function renderSkills() {
+  const matrixContainer = document.getElementById('skillsMatrix');
+  if (matrixContainer) {
+    matrixContainer.innerHTML = PORTFOLIO_DATA.skills.map(cat => `
+      <div class="glass-card skill-category">
+        <h3 class="category-title">${cat.category}</h3>
+        ${cat.items.map(skill => `
+          <div class="skill-row">
+            <div class="skill-label-row">
+              <span class="skill-name">${skill.name}</span>
+              <span class="skill-percent">${skill.percent}%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" data-percent="${skill.percent}"></div>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    `).join('');
+  }
+
+  const toolsContainer = document.getElementById('toolsList');
+  if (toolsContainer) {
+    toolsContainer.innerHTML = PORTFOLIO_DATA.tools.map(tool => {
+      const iconFile = SKILL_ICONS[tool] || SKILL_ICONS[Object.keys(SKILL_ICONS).find(key => tool.includes(key))];
+      const iconUrl = iconFile ? `assets/icons/${iconFile}` : null;
+
+      return `
+        <span class="tool-chip">
+          ${iconUrl ? `<img src="${iconUrl}" alt="${tool}" class="tool-icon" onerror="this.parentElement.removeChild(this)">` : ''}
+          ${tool}
+        </span>
+      `;
+    }).join('');
+  }
 }
 
 function renderHero() {
@@ -348,38 +389,7 @@ function renderProjects() {
   `).join('');
 }
 
-function renderSkills() {
-  const matrixContainer = document.getElementById('skillsMatrix');
-  matrixContainer.innerHTML = PORTFOLIO_DATA.skills.map(cat => `
-    <div class="glass-card skill-category">
-      <h3 class="category-title">${cat.category}</h3>
-      ${cat.items.map(skill => `
-        <div class="skill-row">
-          <div class="skill-label-row">
-            <span class="skill-name">${skill.name}</span>
-            <span class="skill-percent">${skill.percent}%</span>
-          </div>
-          <div class="progress-bar-bg">
-            <div class="progress-bar-fill" data-percent="${skill.percent}"></div>
-          </div>
-        </div>
-      `).join('')}
-    </div>
-  `).join('');
-
-  const toolsContainer = document.getElementById('toolsList');
-  toolsContainer.innerHTML = PORTFOLIO_DATA.tools.map(tool => {
-    const iconSlug = SKILL_ICONS[tool] || SKILL_ICONS[Object.keys(SKILL_ICONS).find(key => tool.includes(key))];
-    const iconUrl = iconSlug ? `https://cdn.simpleicons.org/${iconSlug}` : null;
-    
-    return `
-      <span class="tool-chip">
-        ${iconUrl ? `<img src="${iconUrl}" alt="${tool}" class="tool-icon">` : ''}
-        ${tool}
-      </span>
-    `;
-  }).join('');
-}
+// Duplicate renderSkills removed
 
 function renderLinks() {
   const container = document.getElementById('linksList');
