@@ -215,12 +215,12 @@ const SKILL_ICONS = {
   'State Management': 'code.svg',
   'App Store': 'appstore.svg',
   'Play Store': 'googleplay.svg',
-  'Alamofire': 'apple.png'
-   'Microsoft Azure': 'code.svg',
-   'Kubernetes(AKS)': 'code.svg',
-   'Azure Front Door': 'code.svg',
-   'Azure Application Gateway': 'code.svg',
-   'Azure Event Hubs': 'code.svg'
+  'Alamofire': 'apple.png',
+  'Microsoft Azure': 'code.svg',
+  'Kubernetes(AKS)': 'code.svg',
+  'Azure Front Door': 'code.svg',
+  'Azure Application Gateway': 'code.svg',
+  'Azure Event Hubs': 'code.svg'
 };
 
 /* 
