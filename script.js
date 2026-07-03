@@ -216,6 +216,11 @@ const SKILL_ICONS = {
   'App Store': 'appstore.svg',
   'Play Store': 'googleplay.svg',
   'Alamofire': 'apple.png'
+   'Microsoft Azure': 'code.svg',
+   'Kubernetes(AKS)': 'code.svg',
+   'Azure Front Door': 'code.svg',
+   'Azure Application Gateway': 'code.svg',
+   'Azure Event Hubs': 'code.svg'
 };
 
 /* 
